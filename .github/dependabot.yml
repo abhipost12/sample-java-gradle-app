@@ -1,0 +1,14 @@
+ - package-ecosystem: "gradle"
+    directory: "/" 
+    schedule:
+      interval: "daily" 
+    commit-message:
+      prefix: "gradle"
+     groups:
+      minor-and-patch:
+        applies-to: version-updates
+        patterns:
+          - "*" 
+        update-types:
+        - "minor"
+        - "patch"
